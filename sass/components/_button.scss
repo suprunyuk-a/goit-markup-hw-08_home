@@ -1,0 +1,41 @@
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $hover-color;
+  box-shadow: 0px 4px 4px $box-shadow;
+  border-radius: 4px;
+  transition: background-color $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $back-color-button;
+  }
+}
+
+.button-hero {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+}
+
+.button-footer {
+  display: flex;
+  padding: 10px 62px 10px 29px;
+  margin-left: 12px;
+}
+
+.button-footer-icon {
+  position: absolute;
+  right: 28px;
+  fill: white;
+}
+
+.button-modal {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 55px;
+}

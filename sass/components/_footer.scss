@@ -1,0 +1,84 @@
+/*Нижний колонтитул*/
+.footer {
+  background-color: $back-color-ef;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $white-color;
+  }
+}
+
+.adress {
+  padding: 60px 0px;
+}
+
+.container--footer {
+  display: flex;
+}
+
+.content {
+  padding-top: 72px;
+}
+
+.footer-adress {
+  list-style-type: none;
+  padding-top: 20px;
+  margin-right: 70px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $white-color;
+  }
+
+  &__telmail {
+    color: $telmail;
+  }
+
+  &__link:hover {
+    color: $hover-color;
+  }
+}
+
+.footer-connect {
+  margin-top: 72px;
+  margin-left: 93px;
+
+  &__form {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__field:focus-within &__input {
+    outline: 0;
+    border-color: $hover-color;
+  }
+
+  &__input {
+    display: flex;
+    width: 358px;
+    height: 50px;
+    padding: 12px 16px;
+
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    background-color: $back-color-ef;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
