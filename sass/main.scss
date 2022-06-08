@@ -1,7 +1,7 @@
 @import './utils/variables';
 @import './utils/reset';
 @import './components/base';
-//@import './components/logo';
+@import './components/logo';
 @import './components/button';
 @import './components/social-icon';
 //@import './components/header';
@@ -10,6 +10,6 @@
 @import './components/modal';
 @import './components/team';
 @import './components/task';
-//@import './components/clients';
+@import './components/clients';
 //@import './components/portfolio';
-//@import './components/footer';
+@import './components/footer';
