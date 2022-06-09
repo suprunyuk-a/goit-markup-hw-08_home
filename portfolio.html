@@ -19,37 +19,63 @@
     <header class="header">
       <div class="container container--nav">
         <a class="logo" href="index.html" lang="en"> <span class="logo-color">Web</span>Studio</a>
-        <nav>
-          <ul class="nav-page list">
-            <li class="nav-page__item">
-              <a href="./index.html" class="nav-page__link">Студия</a>
-            </li>
-            <li class="nav-page__item">
-              <a href="./portfolio.html" class="nav-page__link nav-page__link--current"
-                >Портфолио</a
+        <div class="burger-menu" id="burger-menu" data-menu>
+          <nav>
+            <ul class="nav-page list">
+              <li class="nav-page__item">
+                <a href="./index.html" class="nav-page__link">Студия</a>
+              </li>
+              <li class="nav-page__item">
+                <a href="./portfolio.html" class="nav-page__link nav-page__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav-page__item"><a href="Контакты" class="nav-page__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="nav-contact list">
+            <li class="nav-contact__item">
+              <a
+                class="nav-contact__link nav-contact__link--color"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="nav-contact__envelope" width="16" height="12">
+                  <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="nav-page__item"><a href="Контакты" class="nav-page__link">Контакты</a></li>
+            <li class="nav-contact__item">
+              <a class="nav-contact__link nav-contact__link--color" href="tel:+380991111111">
+                <svg class="nav-contact__phone" width="10" height="16">
+                  <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 099 111 11 11</a
+              >
+            </li>
           </ul>
-        </nav>
-        <ul class="nav-contact list">
-          <li class="nav-contact__item">
-            <a class="nav-contact__link nav-contact__link--color" href="mailto:info@devstudio.com">
-              <svg class="nav-contact__envelope" width="16" height="12">
-                <use href="./images/icons/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="nav-contact__item">
-            <a class="nav-contact__link nav-contact__link--color" href="tel:+380991111111">
-              <svg class="nav-contact__phone" width="10" height="16">
-                <use href="./images/icons/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 099 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="nav-social list">
+            <li class="nav-social__item">Instagram</li>
+            <li class="nav-social__item">Twitter</li>
+            <li class="nav-social__item">Facebook</li>
+            <li class="nav-social__item">LinkedIn</li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="burger"
+          aria-expanded="false"
+          aria-controls="burger-menu"
+          data-menu-button
+        >
+          <svg class="burger__icon" aria-label="Бургер меню" width="40" height="40">
+            <use class="burger__icon-menu" href="./images/icons/sprite.svg#icon-burger"></use>
+            <use
+              class="burger__icon-close"
+              href="./images/icons/sprite.svg#icon-close_burger"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -380,5 +406,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>
