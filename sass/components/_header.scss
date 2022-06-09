@@ -1,0 +1,129 @@
+/*Шапка страницы*/
+.header {
+  border-bottom: 1px solid $border-color;
+  background-color: $white-color;
+}
+
+.container--nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
+}
+
+.nav-contact {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+  }
+}
+
+.nav-page,
+.nav-contact {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &__link {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    position: relative;
+    text-decoration: none;
+    color: $head-color;
+    transition: $animation;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__link--color {
+    padding-top: 10px;
+    padding-bottom: 0px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    text-decoration: none;
+    color: $title-color;
+    transition: $animation;
+  }
+
+  &__link--current {
+    color: $hover-color;
+  }
+
+  &__link--current::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: $hover-color;
+    border-radius: 2px;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $hover-color;
+    fill: $hover-color;
+  }
+
+  &__envelope,
+  &__phone {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__link--color {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-contact {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    &__item:last-child {
+      padding-bottom: 21px;
+    }
+    &__item:not(:last-child) {
+      padding-top: 11px;
+      margin-right: 0px;
+    }
+  }
+}
+
+.nav-contact {
+  @media screen and (min-width: 1200px) {
+    &__item:not(:last-child) {
+      margin-left: 300px;
+    }
+  }
+}

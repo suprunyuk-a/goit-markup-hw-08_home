@@ -22,16 +22,25 @@
   padding: 10px 32px;
 }
 
+.footer_button {
+  position: relative;
+}
 .button-footer {
   display: flex;
   padding: 10px 62px 10px 29px;
   margin-left: 12px;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
 }
 
 .button-footer-icon {
   position: absolute;
-  right: 28px;
   fill: white;
+  top: 13px;
+  right: 28px;
 }
 
 .button-modal {

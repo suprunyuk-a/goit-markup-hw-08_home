@@ -1,0 +1,53 @@
+.burger {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__icon-close {
+    display: none;
+  }
+
+  &.is-open &__icon-close {
+    display: block;
+  }
+
+  &.is-open &__icon-menu {
+    display: none;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+  }
+}
+
+.burger-menu {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 48px 40px;
+  }
+
+  &.is-open {
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+}
