@@ -96,4 +96,33 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/img_overlay@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .overlay {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/img_overlay_mobile.jpg);
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/img_overlay_mobile@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .overlay {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/img_overlay_tablet.jpg);
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/img_overlay_tablet@2x.jpg);
+    }
+  }
 }
